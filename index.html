@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <style>
+        .swiper-container{
+/* width: 80%; */
+        }
+    </style>
+</head>
+<body class="overflow-hidden max-w-screen-md mx-auto bg-gray-100">
+    <div class="flex flex-col items-center py-16">
+        <!-- Section Type -->
+        <div class="text-center mb-4">
+          <span class="px-4 py-1 bg-purple-500 text-white rounded-md font-semibold">TYPE 1</span>
+        </div>
+        
+        <!-- Title and Description -->
+        <div class="text-center max-w-lg mb-10">
+          <h2 class="text-lg text-gray-600 font-medium mb-1">Quotes & Testimonials</h2>
+          <h3 class="text-4xl font-bold mb-3">WHAT THEY SAID</h3>
+          <p class="text-gray-500 leading-relaxed">Hear from our satisfied customers who have experienced the difference our fashion pieces make in their lives. Their stories reflect top quality and customer satisfaction.</p>
+        </div>
+      
+        <!-- Swiper Container with Max Width of 600px -->
+        <div class="w-full max-w-md px-4 mx-auto">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              
+              <!-- Slide 1 -->
+              <div class="swiper-slide bg-white p-6 md:p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/60" alt="Profile Image" class="w-16 h-16 rounded-full mb-4">
+                <h4 class="text-xl font-semibold mb-2">"Exceptional Style"</h4>
+                <p class="text-gray-500 mb-4 text-sm">"The style and detailed tailoring of current fashion trends make the designs standout."</p>
+                <span class="mt-2 font-semibold text-gray-700">- Hasan R</span>
+              </div>
+              
+              <!-- Slide 2 -->
+              <div class="swiper-slide bg-white p-6 md:p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/60" alt="Profile Image" class="w-16 h-16 rounded-full mb-4">
+                <h4 class="text-xl font-semibold mb-2">"Cutting-edge Creativity"</h4>
+                <p class="text-gray-500 mb-4 text-sm">"Their unique ability to merge timeless elegance with modern aesthetics is impressive."</p>
+                <span class="mt-2 font-semibold text-gray-700">- Kobir Anique</span>
+              </div>
+              
+              <!-- Slide 3 -->
+              <div class="swiper-slide bg-white p-6 md:p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/60" alt="Profile Image" class="w-16 h-16 rounded-full mb-4">
+                <h4 class="text-xl font-semibold mb-2">"A Fashion Genius"</h4>
+                <p class="text-gray-500 mb-4 text-sm">"Their designs have transformed our brand image. You create for real and attempt to the latest trends."</p>
+                <span class="mt-2 font-semibold text-gray-700">- Fashi Hasan</span>
+              </div>
+            </div>
+      
+            <!-- Pagination and Navigation -->
+            <div class="swiper-pagination mt-6"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+    </div>
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        keyboard: {
+        enabled: true,
+        onlyInViewport: false, // Control slides even when not in viewport
+    },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 1 },
+          1400: { slidesPerView: 1 },
+        },
+      });
+    </script>
+</body>
+</html>  
